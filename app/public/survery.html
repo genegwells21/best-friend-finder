@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Most Abundant Survey</title>
+<!-- this is referencing our bootstrap and jquery -->
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- this is our reference to ajax -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="contained-fluid">
+        <h2> Survery Questions </h2>
+        <hr>
+            <h4> About Yourself</h4>
+            <h5> Your Name Here Please</h5>
+            <input type="text" id="name" class="form-control" required />
+            <h5>Link to your attractive photo, please</h5>
+            <input type="text" name="" id="photo" class="form-control" required />
+            <hr>
+            <h4> Your first abundant question</h4>
+            <h5>I take action on all of my dreams</h5>
+            <select class="chosen-select" id="questionOne">
+                <option value=""></option>
+                <option value="1">1(You Endearingly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5 (You Vehemently Agree)</option>
+                </select>
+
+                <h4> Your second abundant question</h4>
+                <h5>I have everything I need to succeed in life</h5>
+                <select class="chosen-select" id="questionTwo">
+                    <option value=""></option>
+                    <option value="1">1(You Endearingly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5 (You Vehemently Agree)</option>
+                    </select>
+
+                    <h4> Your third abundant question</h4>
+                    <h5>I like myself</h5>
+                    <select data-placeholder="" class="chosen-select" id="questionThree">
+                        <option value=""></option>
+                        <option value="1">1(You Endearingly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5 (You Vehemently Agree)</option>
+                        </select>
+
+                        <h4> Your fourth abundant question</h4>
+                        <h5>I plan out my days in advance</h5>
+                        <select data-placeholder="" class="chosen-select" id="questionFour">
+                            <option value=""></option>
+                            <option value="1">1(You Endearingly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5 (You Vehemently Agree)</option>
+                            </select>
+                             <h4> Your fifth abundant question</h4>
+                            <h5>I have my goals established on paper</h5>
+                            <select data-placeholder="" class="chosen-select" id="questionFive">
+                                <option value=""></option>
+                                <option value="1">1(You Endearingly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5 (You Vehemently Agree)</option>
+                                </select>
+
+                                <h4> Your sixth abundant question</h4>
+                                <h5>I have my goals established on paper</h5>
+                                <select data-placeholder="" class="chosen-select" id="questionSix">
+                                    <option value=""></option>
+                                    <option value="1">1(You Endearingly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5 (You Vehemently Agree)</option>
+                                    </select>
+                                    <h4> Your seventh abundant question</h4>
+                                    <h5>I read a book a week</h5>
+                                    <select data-placeholder="" class="chosen-select" id="questionSeven">
+                                        <option value=""></option>
+                                        <option value="1">1(You Endearingly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5" selected>5 (You Vehemently Agree)</option>
+                                        </select>
+                                        <h4> Your eighth abundant question</h4>
+                                        <h5>I spend a plethora of time on Social Media</h5>
+                                        <select data-placeholder="" class="chosen-select" id="questionEight">
+                                            <option value=""></option>
+                                            <option value="1">1(You Endearingly Disagree)</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5" selected>5 (You Vehemently Agree)</option>
+                                            </select>
+                                            <h4> Your ninth abundant question</h4>
+                                            <h5>I swear profusely</h5>
+                                            <select data-placeholder="" class="chosen-select" id="questionNine">
+                                                <option value=""></option>
+                                                <option value="1">1(You Endearingly Disagree)</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5" selected>5 (You Vehemently Agree)</option>
+                                                </select>
+                                                <h4> Your tenth abundant question</h4>
+                                                <h5>I say please and thank you always</h5>
+                                                <select data-placeholder="" class="chosen-select" id="questionTen">
+                                                    <option value=""></option>
+                                                    <option value="1">1(You Endearingly Disagree)</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5" selected>5 (You Vehemently Agree)</option>
+                                                    </select>
+<br>
+<br>
+<br>
+<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"> <i class="fa fa-check-circle" aria-hidden="true"></i> Press Here Please </button>
+<footer class="footer text-center">
+    <div class="contained-fluid">
+        <p>
+        <a href="#">Aboue Eugene Wells</a> | <a href="https://github.com/genegwells21/Friend-Finder">GitHub Repo</a>
+        <br>
+        </p>
+    </div>
+</footer>
+</div>
+</div>
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+        &times;
+        </button>
+        <h3 class="modal-title"> Your Abundant Match</h3>
+        </div>
+        <div class="modal-body">
+        <h3 id="matchName"></h3>
+        <img id ="matchImage" src="https://via.placeholder.com/400x400" alt="subsitute image" />
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Finished</button>
+        </div>
+        </div>
+        </div>
+        </div>
+    <script type="text/javascript">
+    $("#submit").on("click", function() {
+    function validateForm() {
+        var invalid = true;
+            $ (".form-control").each(function() {
+            if ($(this.val() === "") isValid = false;
+            });
+            $(".chosen-select").each(function()  {
+            if ($(this).val() === "") isValid = false;
+            });
+            return isValid;
+            }
+        if(validateForm() === true) {
+            var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores:     [
+            $("questionOne").val(),
+            $("questionTwo").val(),
+            $("questionThree").val(),
+            $("questionFour").val(),
+            $("questionFive").val(),
+            $("questionSix").val(),
+            $("questionSeven").val(),
+            $("questionEight").val(),
+            $("questionNine").val(),
+            $("questionTen").val(),
+            ]
+            };
+    var currentURL = window.location.origin;
+        $.post(currentURL + "/api/friends", userData, function(data){
+        $("#matchName").text(data.name);
+        $("#matching").attr("src", data.photo);
+        $("#resultsModal").modal("toggle");
+        });
+        }   else    {
+        alert("Please achieve all complete fields before submitting")
+        }
+        });
+    
+</script>
+</body>
+</html>
