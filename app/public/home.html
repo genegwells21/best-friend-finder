@@ -5,88 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Friend Finder</title>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<!-- this is our bootstrap and font awesome reference -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- these are more references to jquery and bootstrap -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.container-fluid    {
-    border-style: hidden;
-    background-color: #EE82EE;
-    border-width: 50%;
-}
-h1 {
-    font-size: 70;
-}
-
-.buttonTwo {
-    display: inline-block;
-    width: 250px;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #f44336;
-    border: none;
-    border-radius: 15px;
-    text-align: center;
-}
-.buttonOne {
-    display: inline-block;
-    width: 250px;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #f44336;
-    border: none;
-    border-radius: 15px;
-    text-align: center;
-}
-.buttonOne:hover {background-color: #3e8e41}
-.buttonTwo:hover {background-color: #3e8e41}
-
-.buttonOne:active {
-    background-color: #3e8e41;
-    transform: translateY(4px);
-}
-.buttonTwo:active {
-    background-color: #3e8e41;
-    transform: translateY(4px);
-}
-</style>
 </head>
 <body>
+    <!-- this is the start of our page that contains our App title -->
     <div style="text-align: center" class= "container-fluid">
     <div class="jumbotron">
-    <div class= "titleSection">
-        <i class="fa fa-facebook" aria-hidden="true"></i> <h1>Friend Finder </h1>
+       <h1> <i class="fa fa-facebook" aria-hidden="true"></i>Friend Finder </h1>
 <hr>
         <h2> Answer a few basic questions. <br> Then find the friend with the greatest compatibility!</h2>
 <br>
-<br>
-<br>
-<br>
-<a href="/survey"> <button class="buttonOne"><i class="fa fa-server" aria-hidden="true"></i> Go To Survey</button> </a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div>
+    <!-- this is our intiate button -->
+<a href="/survey"> <button class="btn btn-lg btn-primary"><h3><span class="fa fa-server" aria-hidden="true"></span> Go To Survey </h3></button> </a>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<a href="/api/friends">API Friends List </a> |  <a href="https://github.com/genegwells21">GitHub Repo </a>  
+</div>
+<!-- this is our footer that contains links to our friends list within our api folder and our github repository as well! -->
+<footer class="footer">
+
+<div class="container-fluid">
+<p><a href="/api/friends">API Friends List </a> |  <a href="https://github.com/genegwells21">GitHub Repo </a> <p>
+</div>
+</footer>
+
+</div>
 </body>
 </html>
 
