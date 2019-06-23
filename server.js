@@ -1,16 +1,17 @@
+// this is requiring express 
 var express = require("express");
-
+// this is initializing express and setting our port for heroku
 var app = express();
-var PORT = process.env.PORT || 3000;
-
+var PORT = process.env.PORT || 4522;
+// we are using epxress with json data with url encoded for body aprser
 app.use(express.json());
-app.use(express.urlencode({ extended: true}));
+app.use(express.urlencoded({ extended: true}));
 
 
 
-
-require("./app/routing/api-route.js")(app);
-require("./app/routing/html-routes.js")(app);
-
+// we are requiring our routes here
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+// we are making a listen method to see if the port is listening on our port
 app.listen(PORT, function ()    {
-console.log("Listening on PORT: " + PORT );
+console.log("Listening on PORT: " + PORT )});
